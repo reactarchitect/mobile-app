@@ -7,10 +7,15 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.7",
+    "@rematch/core": "^2.1.0",
+    "@rematch/loading": "^2.1.0",
+    "@rematch/persist": "^2.1.0",
     "expo": "~42.0.1",
     "expo-splash-screen": "~0.11.2",
     "expo-status-bar": "~1.0.4",
     "expo-updates": "~0.8.1",
+    "moment": "^2.29.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.4",
@@ -18,7 +23,10 @@
     "react-native-reanimated": "~2.2.0",
     "react-native-screens": "~3.4.0",
     "react-native-unimodules": "~0.14.5",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "react-redux": "^7.2.4",
+    "redux-logger": "^3.0.6",
+    "redux-persist-transform-filter": "^0.0.20"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
