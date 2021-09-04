@@ -1,3 +1,6 @@
 [submodule "app/Redux/Models"]
 	path = app/Redux/Models
 	url = https://github.com/reactarchitect/Models.git
+[submodule "app/Redux/Plugins"]
+	path = app/Redux/Plugins
+	url = https://github.com/reactarchitect/Plugins.git
