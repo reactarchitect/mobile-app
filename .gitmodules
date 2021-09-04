@@ -4,3 +4,6 @@
 [submodule "app/Redux/Plugins"]
 	path = app/Redux/Plugins
 	url = https://github.com/reactarchitect/Plugins.git
+[submodule "app/Redux/Filters"]
+	path = app/Redux/Filters
+	url = https://github.com/reactarchitect/Filters.git
