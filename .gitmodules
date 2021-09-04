@@ -7,3 +7,6 @@
 [submodule "app/Redux/Filters"]
 	path = app/Redux/Filters
 	url = https://github.com/reactarchitect/Filters.git
+[submodule "app/Utils/API"]
+	path = app/Utils/API
+	url = https://github.com/reactarchitect/API.git
