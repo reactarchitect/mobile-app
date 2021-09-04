@@ -10,7 +10,7 @@ function Landing(props) {
     useEffect(() => {
         props.clearToDo();
         // props.fetchToDo();
-        // props.fetchPosts();
+        props.fetchPosts();
     }, []);
 
     const onPressSubmit = () => {
@@ -88,15 +88,19 @@ function Landing(props) {
     );
 }
 
-const mapStateToProps = ({ ToDo, loading }) => ({
+const mapStateToProps = ({ ToDo, Posts, loading }) => ({
     arrToDo: ToDo.arrToDo,
+    arrPosts: Posts.arrPosts,
     loading: loading.effects.ToDo.fetchToDo,
+    loadingPosts: loading.effects.Posts.fetchPosts
 });
 
 const mapDispatchToProps = ({
-    ToDo: { fetchToDo, insertToDo, updateToDo, deleteToDo, clearToDo }
+    ToDo: { fetchToDo, insertToDo, updateToDo, deleteToDo, clearToDo },
+    Posts: { fetchPosts }
 }) => ({
     fetchToDo: () => fetchToDo(),
+    fetchPosts: () => fetchPosts(),
     insertToDo: (payload) => insertToDo(payload),
     updateToDo: (payload) => updateToDo(payload),
     deleteToDo: (payload) => deleteToDo(payload),
